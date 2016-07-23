@@ -1,0 +1,90 @@
+extends layout
+
+block content
+    title Formulario de nuevo alumno
+
+    .chute.chute-center
+        .mw1000.center-block
+            // -------------- Spec Form --------------
+            .allcp-form
+                .panel
+                    .panel-heading
+                        .panel-title
+                            | Form Elements
+                    .panel-body
+                        form#form-ui(method='post', action='')
+                            h6#spy1.mb20 Formulario
+                            .row
+
+                                .col-md-4
+                                    h6#spy1.mb20 Apellido paterno
+                                    .section
+                                        label.field
+                                            input#from.gui-input(type='text', name='from', placeholder='Apellido paterno')
+
+                                .col-md-4
+                                    h6#spy1.mb20 Apellido materno
+                                    .section
+                                        label.field
+                                            input#from.gui-input(type='text', name='from', placeholder='Apellido materno')
+                                .col-md-4
+                                    h6#spy1.mb20 Nombres
+                                    .section
+                                        label.field
+                                            input#from.gui-input(type='text', name='from', placeholder='Nombres')
+                            //.row
+                            //    .col-md-6
+                            //        .section
+                            //            label.field
+                            //                input#from.gui-input(type='text', name='from', placeholder='Tipo Documento')
+                            //    .col-md-6
+                            //        .section
+                            //            label.field
+                            //                input#from.gui-input(type='text', name='from', placeholder='Numero Documento')
+                            .row
+                                .col-md-3
+                                    h6#spy1.mb20 País
+                                    .section
+                                        select.form-control
+                                            option Option 1
+                                            option Option 2
+                                            option Option 3
+                                .col-md-3
+                                    h6#spy1.mb20 Estado / Provincia / Comuna
+                                    .section
+                                        label.field
+                                            input#from.gui-input(type='text', name='from', placeholder='Estado / Provincia / Comuna')
+                                .col-md-6
+                                    h6#spy1.mb20 Direccion
+                                    .section
+                                        label.field
+                                            input#from.gui-input(type='text', name='from', placeholder='Dirección')
+                            .row
+                                .col-md-6
+                                    .section
+                                        label.field
+                                            input#from.gui-input(type='text', name='from', placeholder='Fecha de nacimiento')
+                                .col-md-6
+                                    .section
+                                        label.field
+                                            input#from.gui-input(type='text', name='from', placeholder='Sexo')
+                                .col-md-6
+                                    .section
+                                        label.field
+                                            input#from.gui-input(type='text', name='from', placeholder='Teléfono particular')
+                                .col-md-6
+                                    .section
+                                        label.field
+                                            input#from.gui-input(type='text', name='from', placeholder='Teléfono móvil')
+                                .col-md-6
+                                    .section
+                                        label.field
+                                            input#from.gui-input(type='text', name='from', placeholder='Correo electrónico')
+
+                            .row
+                                .col-md-4
+                                .col-md-4
+                                    .section
+                                        button.btn.active.btn-dark.btn-block(type='button')
+                                            | Ingresar nuevo alumno
+                                .col-md-4

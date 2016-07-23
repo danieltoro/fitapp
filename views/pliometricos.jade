@@ -1,0 +1,262 @@
+extends layout
+
+block content
+    title Calculos Antropometricos
+
+    .chute.chute-center
+        .mw1000.center-block
+            // -------------- Spec Form --------------
+            .allcp-form
+                .panel
+                    .panel-heading
+                        .panel-title
+                            | Form Elements
+
+                    //DIAMETROS
+                    .panel-body
+                        form#form-ui(method='post', action='')
+                            h6#spy1.mb20 Diámetros
+                            .row
+                                //BIACROMIAL
+                                .col-md-6
+                                    .section
+                                        label.field
+                                            input#from.gui-input(type='text', name='from', placeholder='Ingrese diámetro Bicromial')
+                                //TORAX TRANVERSO
+                                .col-md-6
+                                    .section
+                                        label.field
+                                            input#from.gui-input(type='text', name='from', placeholder='Ingrese diámetro Torax Tranverso')
+                                //TORAX ANTEROPOSTERIOR
+                                .col-md-6
+                                    .section
+                                        label.field
+                                            input#from.gui-input(type='text', name='from', placeholder='Ingrese diámetro Torax Anteroposterior')
+                                //BI-LIOCRESTIDEO
+                                .col-md-6
+                                    .section
+                                        label.field
+                                            input#from.gui-input(type='text', name='from', placeholder='Ingrese diámetro BiLiocrestideo')
+                                //HUMERAL
+                                .col-md-6
+                                    .section
+                                        label.field
+                                            input#from.gui-input(type='text', name='from', placeholder='Ingrese diámetro Humeral')
+                                //FEMORAL
+                                .col-md-6
+                                    .section
+                                        label.field
+                                            input#from.gui-input(type='text', name='from', placeholder='Ingrese diámetro Femoral')
+
+                        //PERÍMETROS
+                        form#form-ui(method='post', action='')
+                            h6#spy1.mb20 Perímetros
+                            .row
+                                //CABEZA
+                                .col-md-6
+                                    .section
+                                        label.field
+                                            input#from.gui-input(type='text', name='from', placeholder='Ingrese perímetro cabeza')
+                                //BRAZO RELAJADO
+                                .col-md-6
+                                    .section
+                                        label.field
+                                            input#from.gui-input(type='text', name='from', placeholder='Ingrese perímetro brazo relajado')
+                                //BRAZO FLEXIONADO EN TENSION
+                                .col-md-6
+                                    .section
+                                        label.field
+                                            input#from.gui-input(type='text', name='from', placeholder='Ingrese perímetro flexionado en tension')
+                                //ANTEBRAZO
+                                .col-md-6
+                                    .section
+                                        label.field
+                                            input#from.gui-input(type='text', name='from', placeholder='Ingrese perímetro antebrazo')
+                                //TORAX MESOESTERNAL
+                                .col-md-6
+                                    .section
+                                        label.field
+                                            input#from.gui-input(type='text', name='from', placeholder='Ingrese perímetro torax mesoesternal')
+                                //CINTURA
+                                .col-md-6
+                                    .section
+                                        label.field
+                                            input#from.gui-input(type='text', name='from', placeholder='Ingrese perímetro cintura')
+                                //CADERA MAXIMA
+                                .col-md-6
+                                    .section
+                                        label.field
+                                            input#from.gui-input(type='text', name='from', placeholder='Ingrese perímetro cadera maxima')
+                                //MUSLO MAXIMO
+                                .col-md-6
+                                    .section
+                                        label.field
+                                            input#from.gui-input(type='text', name='from', placeholder='Ingrese perímetro muslo maximo')
+                                //MUSLO MEDIO
+                                .col-md-6
+                                    .section
+                                        label.field
+                                            input#from.gui-input(type='text', name='from', placeholder='Ingrese perímetro muslo medio')
+                                //PANTORILLA MAXIMA
+                                .col-md-6
+                                    .section
+                                        label.field
+                                            input#from.gui-input(type='text', name='from', placeholder='Ingrese perímetro pantorrilla maxima')
+                        //PERÍMETROS
+                        form#form-ui(method='post', action='')
+                            h6#spy1.mb20 Pliegues
+                            .row
+                                //TRICEPS
+                                .col-md-6
+                                    .section
+                                        label.field
+                                            input#from.gui-input(type='text', name='from', placeholder='Ingrese pliegue Triceps')
+                                //SUBESCAPULAR
+                                .col-md-6
+                                    .section
+                                        label.field
+                                            input#from.gui-input(type='text', name='from', placeholder='Ingrese pliegue Subescapular')
+                                //SUPRAESPINAL
+                                .col-md-6
+                                    .section
+                                        label.field
+                                            input#from.gui-input(type='text', name='from', placeholder='Ingrese pliegue Supraespinal')
+                                //ABDOMINAL
+                                .col-md-6
+                                    .section
+                                        label.field
+                                            input#from.gui-input(type='text', name='from', placeholder='Ingrese pliegue Abdominal')
+                                //MUSLO MEDIO
+                                .col-md-6
+                                    .section
+                                        label.field
+                                            input#from.gui-input(type='text', name='from', placeholder='Ingrese pliegue Muslo Medio')
+                                //PANTORRILLA
+                                .col-md-6
+                                    .section
+                                        label.field
+                                            input#from.gui-input(type='text', name='from', placeholder='Ingrese pliegue Pantorrilla')
+
+
+                                .col-md-3
+                                .col-md-6
+                                    .section
+                                        button.btn.active.btn-dark.btn-block(type='button')
+                                            | Calculos antropometricos
+                                .col-md-3
+                            .row
+                                .panel-heading
+                                    span.panel-title Estadísticas históricas
+                                    .pull-right
+                                .panel-body.pn
+                                    .row
+                                        h5#spy1.mb20 Resultados de diámetros
+                                        .table-responsive
+                                            table.table
+                                                thead
+                                                    tr
+                                                        th #
+                                                        th Fecha
+                                                        th Bicromial
+                                                        th Tórax Tranverso
+                                                        th Tórax Anteroposterior
+                                                        th Bi-Liocrestídeo
+                                                        th Humeral
+                                                        th Femoral
+                                                tbody
+                                                    tr
+                                                        td  1
+                                                        td  Press Banca con barra
+                                                        td  3
+                                                        td  5/3/1
+                                                        td
+                                                        td
+                                                        td
+                                                    tr
+                                                        td  2
+                                                        td  Press inclinado con barra
+                                                        td  3
+                                                        td  6-8
+                                                        td
+                                                        td
+                                                        td
+                                                        td
+                                    .row
+                                        h5#spy1.mb20 Resultados de perímetros
+                                        .table-responsive
+                                            table.table
+                                                thead
+                                                    tr
+                                                        th #
+                                                        th Fecha
+                                                        th Cabeza
+                                                        th Brazo relajado
+                                                        th Brazo flexionado
+                                                        th Antebrazo
+                                                        th Tórax mesoesternal
+                                                        th Cintura
+                                                        th Cadera máxima
+                                                        th Muslo máximo
+                                                        th Muslo medio
+                                                        th Pantorrilla máxima
+                                                tbody
+                                                    tr
+                                                        td  1
+                                                        td  Press Banca con barra
+                                                        td  3
+                                                        td  5/3/1
+                                                        td
+                                                        td
+                                                        td
+                                                        td
+                                                        td
+                                                        td
+                                                        td
+                                                        td
+                                                    tr
+                                                        td  2
+                                                        td  Press inclinado con barra
+                                                        td  3
+                                                        td  6-8
+                                                        td
+                                                        td
+                                                        td
+                                                        td
+                                                        td
+                                                        td
+                                                        td
+                                                        td
+                                    .row
+                                        h5#spy1.mb20 Resultados de pliegues
+                                        .table-responsive
+                                            table.table
+                                                thead
+                                                    tr
+                                                        th #
+                                                        th Fecha
+                                                        th Triceps
+                                                        th Subescapular
+                                                        th Supraespinal
+                                                        th Abdominal
+                                                        th Muslo medio
+                                                        th Pantorrilla
+                                                tbody
+                                                    tr
+                                                        td  1
+                                                        td  Press Banca con barra
+                                                        td  3
+                                                        td  5/3/1
+                                                        td
+                                                        td
+                                                        td
+                                                        td
+                                                    tr
+                                                        td  2
+                                                        td  Press inclinado con barra
+                                                        td  3
+                                                        td  6-8
+                                                        td
+                                                        td
+                                                        td
+                                                        td
+

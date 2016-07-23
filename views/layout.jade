@@ -1,0 +1,676 @@
+doctype html
+html
+    head
+        // -------------- Meta and Title --------------
+        meta(charset='utf-8')
+        meta(name='keywords', content='HTML5, Bootstrap 3, Admin Template, UI Theme')
+        meta(name='description', content='FitApp - Aplicacion para el control deportivo')
+        meta(name='author', content='DanielTSX')
+        meta(name='viewport', content='width=device-width, initial-scale=1.0')
+        // -------------- Fonts --------------
+        link(rel='stylesheet', type='text/css', href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700')
+        link(href='https://fonts.googleapis.com/css?family=Lato:400,300,300italic,400italic,700,700italic', rel='stylesheet', type='text/css')
+        // -------------- CSS - theme --------------
+        link(rel='stylesheet', type='text/css', href='assets/skin/default_skin/css/theme.css')
+        // -------------- CSS - allcp forms --------------
+        link(rel='stylesheet', type='text/css', href='assets/allcp/forms/css/forms.css')
+        // -------------- Favicon --------------
+        link(rel='shortcut icon', href='assets/img/favicon.ico')
+        link(rel='stylesheet', type='text/css', href='assets/js/plugins/daterange/daterangepicker.css')
+        link(rel='stylesheet', type='text/css', href='assets/js/plugins/datepicker/css/bootstrap-datetimepicker.css')
+
+        link(rel='stylesheet', type='text/css', href='assets/js/plugins/datepicker/css/bootstrap-datetimepicker.css')
+        // -------------- IE8 HTML5 support  --------------
+        //if lt IE 9
+          script(src='https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.js')
+          script(src='https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js')
+    body.tables-basic(data-spy='scroll', data-target='#nav-spy', data-offset='300')
+        // -------------- Body Wrap  --------------
+        #main
+            // -------------- Header  --------------
+            header.navbar.navbar-fixed-top.bg-dark
+                .navbar-logo-wrapper
+                    a.navbar-logo-text(href='/')
+                        b FitApp
+                    span#sidebar_left_toggle.ad.ad-lines
+                ul.nav.navbar-nav.navbar-left
+                    li.dropdown.dropdown-fuse.hidden-xs
+                        a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-expanded='false')
+                            | Dropdown
+                            span.fa.fa-chevron-down
+                        ul.dropdown-menu(role='menu')
+                            li
+                                a(href='#') Action
+                            li
+                                a(href='#') One more action
+                            li
+                                a(href='#') More actions if needed
+                            li.divider
+                            li
+                                a(href='#') Separated action
+                    li.hidden-xs
+                        a.navbar-fullscreen.toggle-active(href='#')
+                            span.glyphicon.glyphicon-fullscreen
+                form.navbar-form.navbar-left.search-form.square(role='search')
+                    .input-group.add-on
+                        input.form-control(type='text', placeholder='Buscar...', onfocus="this.placeholder=''", onblur="this.placeholder='Buscar...'")
+                        .input-group-btn
+                            button.btn.btn-default(type='submit')
+                                i.glyphicon.glyphicon-search
+                ul.nav.navbar-nav.navbar-right
+                    li.hidden-xs
+                        .navbar-btn.btn-group
+                            a.btn(href='nuevoalumno.html')
+                                span.fa.fa-male.fs20.text-info
+                    li.hidden-xs
+                        .navbar-btn.btn-group
+                            a.topbar-dropmenu-toggle.btn(href='#', data-toggle='button')
+                                span.fa.fa-magic.fs20.text-info
+                    li.dropdown.dropdown-fuse
+                        .navbar-btn.btn-group
+                            button.btn.dropdown-toggle(data-toggle='dropdown')
+                                span.fa.fa-envelope.fs20.text-danger
+                            button.btn.dropdown-toggle.fs18.visible-xl(data-toggle='dropdown')
+                                | 3
+                            .dropdown-menu.keep-dropdown.w375.animated.animated-shorter.fadeIn(role='menu')
+                                .panel.mbn
+                                    .panel-menu
+                                        .btn-group.btn-group-justified.btn-group-nav(role='tablist')
+                                            a.btn.btn-primary.btn-bordered.btn-sm.active(href='#nav-tab1', data-toggle='tab') Activity
+                                            a.btn.btn-primary.btn-bordered.btn-sm.br-l-n.br-r-n(href='#nav-tab2', data-toggle='tab') Messages
+                                            a.btn.btn-primary.btn-bordered.btn-sm(href='#nav-tab3', data-toggle='tab') Notifications
+                                    .panel-body.panel-scroller.scroller-overlay.scroller-navbar.pn
+                                        .tab-content.br-n.pn
+                                            #nav-tab1.tab-pane.active(role='tabpanel')
+                                                ul.media-list(role='menu')
+                                                    li.media
+                                                        a.media-left(href='#')
+                                                            img.mw40.br2(src='assets/img/avatars/5.jpg', alt='avatar')
+                                                        .media-body
+                                                            h5.media-heading
+                                                                | New post
+                                                                small.text-muted - 09/01/15
+                                                            |                                                     Last Updated 5 days ago by
+                                                            a(href='#')  John Doe
+                                                    li.media
+                                                        a.media-left(href='#')
+                                                            img.mw40.br2(src='assets/img/avatars/2.jpg', alt='avatar')
+                                                        .media-body
+                                                            h5.media-heading
+                                                                | New post
+                                                                small  - 09/01/15
+                                                            |                                                     Last Updated 5 days ago by
+                                                            a(href='#')  John Doe
+                                                    li.media
+                                                        a.media-left(href='#')
+                                                            img.mw40.br2(src='assets/img/avatars/3.jpg', alt='avatar')
+                                                        .media-body
+                                                            h5.media-heading
+                                                                | New post
+                                                                small.text-muted - 09/01/15
+                                                            |                                                     Last Updated 5 days ago by
+                                                            a(href='#')  John Doe
+                                                    li.media
+                                                        a.media-left(href='#')
+                                                            img.mw40.br2(src='assets/img/avatars/4.jpg', alt='avatar')
+                                                        .media-body
+                                                            h5.media-heading
+                                                                | New post
+                                                                small.text-muted - 09/01/15
+                                                            |                                                     Last Updated 5 days ago by
+                                                            a(href='#')  John Doe
+                                                    li.media
+                                                        a.media-left(href='#')
+                                                            img.mw40.br2(src='assets/img/avatars/5.jpg', alt='avatar')
+                                                        .media-body
+                                                            h5.media-heading
+                                                                | New post
+                                                                small.text-muted - 09/01/15
+                                                            |                                                     Last Updated 5 days ago by
+                                                            a(href='#')  John Doe
+                                                    li.media
+                                                        a.media-left(href='#')
+                                                            img.mw40.br2(src='assets/img/avatars/2.jpg', alt='avatar')
+                                                        .media-body
+                                                            h5.media-heading
+                                                                | New post
+                                                                small  - 09/01/15
+                                                            |                                                     Last Updated 5 days ago by
+                                                            a(href='#')  John Doe
+                                                    li.media
+                                                        a.media-left(href='#')
+                                                            img.mw40.br2(src='assets/img/avatars/3.jpg', alt='avatar')
+                                                        .media-body
+                                                            h5.media-heading
+                                                                | New post
+                                                                small.text-muted - 09/01/15
+                                                            |                                                     Last Updated 5 days ago by
+                                                            a(href='#')  John Doe
+                                            #nav-tab2.tab-pane.chat-widget(role='tabpanel')
+                                                .media
+                                                    .media-left
+                                                        a(href='#')
+                                                            img.media-object(alt='64x64', src='assets/img/avatars/3.jpg')
+                                                    .media-body
+                                                        span.media-status.online
+                                                        h5.media-heading
+                                                            | Frank Hill
+                                                            small  - 14:10am
+                                                        |                                                 Lorem ipsum dolor sit amet, consectetuer adipiscing elitt.
+                                                .media
+                                                    .media-body
+                                                        span.media-status.offline
+                                                        h5.media-heading
+                                                            | George Kelly
+                                                            small  - 15:25am
+                                                        |                                                 Sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                                                        |                                                 aliquam erat volutpat.
+                                                    .media-right
+                                                        a(href='#')
+                                                            img.media-object(alt='64x64', src='assets/img/avatars/1.jpg')
+                                                .media
+                                                    .media-left
+                                                        a(href='#')
+                                                            img.media-object(alt='64x64', src='assets/img/avatars/2.jpg')
+                                                    .media-body
+                                                        span.media-status.online
+                                                        h5.media-heading
+                                                            | Frank Hill
+                                                            small  - 15:33am
+                                                        |                                                 Lorem ipsum dolor sit amet, nonummy nibh euismod tinc consectetuer
+                                                        |                                                 adipiscing elitt.
+                                                .media
+                                                    .media-body
+                                                        span.media-status.offline
+                                                        h5.media-heading
+                                                            | George Kelly
+                                                            small  - 15:43am
+                                                        |                                                 Euismod sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+                                                        |                                                 magna aliquam erat volutpat.
+                                                    .media-right
+                                                        a(href='#')
+                                                            img.media-object(alt='64x64', src='assets/img/avatars/1.jpg')
+                                                .media
+                                                    .media-left
+                                                        a(href='#')
+                                                            img.media-object(alt='64x64', src='assets/img/avatars/2.jpg')
+                                                    .media-body
+                                                        span.media-status.online
+                                                        h5.media-heading
+                                                            | Frank Hill
+                                                            small  - 16:30am
+                                                        |                                                 Corem ipsum dolor sit amet, nonummy nibh euismod tinc co.
+                                                .media
+                                                    .media-body
+                                                        span.media-status.offline
+                                                        h5.media-heading
+                                                            | George Kelly
+                                                            small  - 12:30am
+                                                        |                                                 Ubh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                                                    .media-right
+                                                        a(href='#')
+                                                            img.media-object(alt='64x64', src='assets/img/avatars/1.jpg')
+                                            #nav-tab3.tab-pane.alerts-widget(role='tabpanel')
+                                                .media
+                                                    a.media-left(href='#')
+                                                        span.fa.fa-shopping-cart.text-success
+                                                    .media-body
+                                                        h5.media-heading
+                                                            | New Product Order
+                                                            small.text-muted
+                                                        a(href='#') iPad Air
+                                                        |  - 3 hours ago
+                                                    .media-right
+                                                        .media-response  Confirm?
+                                                        .btn-group
+                                                            button.btn.btn-default.btn-sm.btn-bordered.light(type='button')
+                                                                i.fa.fa-check.text-success
+                                                            button.btn.btn-default.btn-sm.btn-bordered.light(type='button')
+                                                                i.fa.fa-cog
+                                                .media
+                                                    a.media-left(href='#')
+                                                        span.fa.fa-comment.text-system
+                                                    .media-body
+                                                        h5.media-heading
+                                                            | New User Comment
+                                                            small.text-muted
+                                                        |                                                 Sam Fisher - I'd like to read more!
+                                                    .media-right
+                                                        .media-response.text-right  Moderate?
+                                                        .btn-group
+                                                            button.btn.btn-default.btn-sm.btn-bordered.light(type='button')
+                                                                i.fa.fa-check.text-success
+                                                            button.btn.btn-default.btn-sm.btn-bordered.light(type='button')
+                                                                i.fa.fa-pencil
+                                                .media
+                                                    a.media-left(href='#')
+                                                        span.fa.fa-eye.text-warning
+                                                    .media-body
+                                                        h5.media-heading
+                                                            | New User Review
+                                                            small.text-muted
+                                                        |                                                 Sebastian Jones - 5 hours ago
+                                                    .media-right
+                                                        .media-response  Approve?
+                                                        .btn-group
+                                                            button.btn.btn-default.btn-sm.btn-bordered.light(type='button')
+                                                                i.fa.fa-check.text-success
+                                                            button.btn.btn-default.btn-sm.btn-bordered.light(type='button')
+                                                                i.fa.fa-remove
+                                                .media
+                                                    a.media-left(href='#')
+                                                        span.fa.fa-user.text-info
+                                                    .media-body
+                                                        h5.media-heading
+                                                            | New User Registration
+                                                            small.text-muted
+                                                        |                                                 Carlos Santiyago - 7 hours ago
+                                                    .media-right
+                                                        .media-response  Approve?
+                                                        .btn-group
+                                                            button.btn.btn-default.btn-sm.btn-bordered.light(type='button')
+                                                                i.fa.fa-check.text-success
+                                                            button.btn.btn-default.btn-sm.btn-bordered.light(type='button')
+                                                                i.fa.fa-remove
+                                                .media
+                                                    a.media-left(href='#')
+                                                        span.fa.fa-user.text-info
+                                                    .media-body
+                                                        h5.media-heading
+                                                            | New User Registration
+                                                            small.text-muted
+                                                        |                                                 Douglas Adams - 13 hours ago
+                                                    .media-right
+                                                        .media-response  Approve?
+                                                        .btn-group
+                                                            button.btn.btn-default.btn-sm.btn-bordered.light(type='button')
+                                                                i.fa.fa-check.text-success
+                                                            button.btn.btn-default.btn-sm.btn-bordered.light(type='button')
+                                                                i.fa.fa-remove
+                                                .media
+                                                    a.media-left(href='#')
+                                                        span.fa.fa-info.text-alert
+                                                    .media-body
+                                                        h5.media-heading
+                                                            | New Invoice
+                                                            small.text-muted
+                                                        a(href='#') iPad Air
+                                                        |  - 14 hours ago
+                                                    .media-right
+                                                        .media-response.single #1234567
+                                                        button.btn.btn-default.btn-sm.btn-bordered.light(type='button')
+                                                            i.fa.fa-link
+                                                .media
+                                                    a.media-left(href='#')
+                                                        span.fa.fa-shopping-cart.text-success
+                                                    .media-body
+                                                        h5.media-heading
+                                                            | New Product Order
+                                                            small.text-muted
+                                                        a(href='#') iPad Air
+                                                        |  - 14 hours ago
+                                                    .media-right
+                                                        .media-response  Confirm?
+                                                        .btn-group
+                                                            button.btn.btn-default.btn-sm.btn-bordered.light(type='button')
+                                                                i.fa.fa-check.text-success
+                                                            button.btn.btn-default.btn-sm.btn-bordered.light(type='button')
+                                                                i.fa.fa-cog
+                                    .panel-footer.text-center
+                                        a.btn.btn-primary.btn-sm.btn-bordered(href='#')  View All
+                    li.dropdown.dropdown-fuse
+                        .navbar-btn.btn-group
+                            button.btn.dropdown-toggle(data-toggle='dropdown')
+                                span.fa.fa-bell.fs20.text-primary
+                            button.btn.dropdown-toggle.fs18.visible-xl(data-toggle='dropdown')
+                                | 8
+                            .dropdown-menu.keep-dropdown.w375.animated.animated-shorter.fadeIn(role='menu')
+                                .panel.mbn
+                                    .panel-menu
+                                        span.panel-icon
+                                            i.fa.fa-tasks
+                                        span.panel-title.fw600  Activity reports
+                                        button.btn.btn-default.light.btn-xs.btn-bordered.pull-right(type='button')
+                                            i.fa.fa-refresh
+                                    .panel-body.panel-scroller.scroller-navbar.scroller-overlay.scroller-pn.pn
+                                        ol.timeline-list
+                                            li.timeline-item
+                                                .timeline-icon.bg-dark.light
+                                                    span.fa.fa-envelope
+                                                .timeline-desc
+                                                    b John Doe
+                                                    |  Sent you a message.
+                                                    a(href='#') View now
+                                                .timeline-date 11:15am
+                                            li.timeline-item
+                                                .timeline-icon.bg-success
+                                                    span.fa.fa-info
+                                                .timeline-desc
+                                                    b Admin
+                                                    |  created invoice for:
+                                                    a(href='#') iPad Air
+                                                .timeline-date 6:26pm
+                                            li.timeline-item
+                                                .timeline-icon.bg-success
+                                                    span.fa.fa-info
+                                                .timeline-desc
+                                                    b Admin
+                                                    |  created invoice for:
+                                                    a(href='#') iPhone 5s
+                                                .timeline-date 11:45am
+                                            li.timeline-item
+                                                .timeline-icon.bg-dark.light
+                                                    span.fa.fa-envelope
+                                                .timeline-desc
+                                                    b Lara Johnes
+                                                    |  Sent you a message.
+                                                    a(href='#') View now
+                                                .timeline-date 3:18pm
+                                            li.timeline-item
+                                                .timeline-icon.bg-primary
+                                                    span.fa.fa-star
+                                                .timeline-desc
+                                                    b Richard Johnes
+                                                    |  Added to wishlist:
+                                                    a(href='#') iPhone 5c
+                                                .timeline-date 8:15am
+                                            li.timeline-item
+                                                .timeline-icon.bg-success
+                                                    span.fa.fa-info
+                                                .timeline-desc
+                                                    b Admin
+                                                    |  created invoice for:
+                                                    a(href='#') Mac Pro
+                                                .timeline-date 9:29pm
+                                            li.timeline-item
+                                                .timeline-icon.bg-primary
+                                                    span.fa.fa-star
+                                                .timeline-desc
+                                                    b Douglas Adams
+                                                    |  Added to wishlist:
+                                                    a(href='#') iPad 4
+                                                .timeline-date 3:05am
+                                    .panel-footer.text-center
+                                        a.btn.btn-primary.btn-sm.btn-bordered(href='#')  View All
+                    li.dropdown.dropdown-fuse
+                        .navbar-btn.btn-group
+                            button.btn.btn-md.dropdown-toggle(data-toggle='dropdown')
+                                | EN
+                            ul.dropdown-menu.pv5.animated.animated-short.fadeIn(role='menu')
+                                li
+                                    a(href='javascript:void(0);')  Spanish
+                                li
+                                    a(href='javascript:void(0);')  Italian
+                    li.dropdown.dropdown-fuse
+                        a.dropdown-toggle.fw600(href='#', data-toggle='dropdown')
+                            span.hidden-xs
+                                name Doug Adams
+                            span.fa.fa-caret-down.hidden-xs.mr15
+                            img.mw55(src='assets/img/avatars/profile_avatar.jpg', alt='avatar')
+                        ul.dropdown-menu.list-group.keep-dropdown.w250(role='menu')
+                            li.dropdown-header.clearfix
+                                .pull-left.ml10
+                                    select#user-status
+                                        optgroup(label='Current Status:')
+                                            option(value='1-1') Away
+                                            option(value='1-2') Busy
+                                            option(value='1-3', selected='selected') Online
+                                            option(value='1-4') Offline
+                                .pull-right.mr10
+                                    select#user-role
+                                        optgroup(label='Logged in As:')
+                                            option(value='1-1', selected='selected') Admin
+                                            option(value='1-2') Editor
+                                            option(value='1-3') User
+                            li.list-group-item
+                                a.animated.animated-short.fadeInUp(href='#')
+                                    span.fa.fa-envelope-o
+                                    |  Messages
+                                    span.label.label-warning 54
+                            li.list-group-item
+                                a.animated.animated-short.fadeInUp(href='#')
+                                    span.fa.fa-users
+                                    |  Friends
+                                    span.label.label-warning 6
+                            li.list-group-item
+                                a.animated.animated-short.fadeInUp(href='#')
+                                    span.fa.fa-bell
+                                    |  Notifications
+                            li.list-group-item
+                                a.animated.animated-short.fadeInUp(href='#')
+                                    span.fa.fa-cogs
+                                    |  Settings
+                            li.dropdown-footer.text-center
+                                a.btn.btn-primary.btn-sm.btn-bordered(href='#')
+                                    span.fa.fa-power-off.pr5
+                                    |  Logout
+            // -------------- /Header  --------------
+            // -------------- Sidebar  --------------
+            aside#sidebar_left.nano.nano-light.affix
+                // -------------- Sidebar Left Wrapper  --------------
+                .sidebar-left-content.nano-content
+                    // -------------- Sidebar Header --------------
+                    header.sidebar-header
+                        // -------------- Sidebar - Author --------------
+                        .sidebar-widget.author-widget
+                            .media
+                                a.media-left(href='#')
+                                    img.img-responsive(src='assets/img/avatars/profile_avatar.jpg')
+                                .media-body
+                                    .media-links
+                                        a.sidebar-menu-toggle(href='#') Menu Usuario -
+                                        a(href='utility-login.html') Salir
+                                    .media-author Douglas Adams
+                        // -------------- Sidebar - Author Menu  --------------
+                        .sidebar-widget.menu-widget
+                            .row.text-center.mbn
+                                .col-xs-2.pln.prn
+                                    a.text-primary(href='dashboard1.html', data-toggle='tooltip', data-placement='top', title='Dashboard')
+                                        span.fa.fa-dashboard
+                                .col-xs-4.col-sm-2.pln.prn
+                                    a.text-info(href='charts-highcharts.html', data-toggle='tooltip', data-placement='top', title='Stats')
+                                        span.fa.fa-bar-chart-o
+                                .col-xs-4.col-sm-2.pln.prn
+                                    a.text-system(href='sales-stats-products.html', data-toggle='tooltip', data-placement='top', title='Orders')
+                                        span.fa.fa-info-circle
+                                .col-xs-4.col-sm-2.pln.prn
+                                    a.text-warning(href='sales-stats-purchases.html', data-toggle='tooltip', data-placement='top', title='Invoices')
+                                        span.fa.fa-file
+                                .col-xs-4.col-sm-2.pln.prn
+                                    a.text-alert(href='basic-profile.html', data-toggle='tooltip', data-placement='top', title='Users')
+                                        span.fa.fa-users
+                                .col-xs-4.col-sm-2.pln.prn
+                                    a.text-danger(href='management-tools-dock.html', data-toggle='tooltip', data-placement='top', title='Settings')
+                                        span.fa.fa-cogs
+                    // -------------- /Sidebar Header --------------
+                    // -------------- Sidebar Menu  --------------
+                    ul.nav.sidebar-menu
+                        li.sidebar-label.pt30 Menu
+                        li.sidebar-label.pt25 Fisiométricos
+                        li
+                            a.accordion-toggle(href='#')
+                                span.fa.fa-share-square-o
+                                span.sidebar-title Medidas
+                                span.caret
+                            ul.nav.sub-nav
+                                li
+                                    a(href='fisicos')
+                                        span.glyphicon.glyphicon-tags
+                                        |  Peso - Estatura
+                                li
+                                    a(href='pliometricos')
+                                        span.glyphicon.glyphicon-tags
+                                        |  Pliométricos
+                                li
+                                    a(href='resumen')
+                                        span.glyphicon.glyphicon-tags
+                                        |  Resumen
+                        li.sidebar-label.pt25 Rutina
+                        li
+                            a.accordion-toggle(href='#')
+                                span.fa.fa-share-square-o
+                                span.sidebar-title Ejercicios
+                                span.caret
+                            ul.nav.sub-nav
+                                li
+                                    a(href='rm')
+                                        span.glyphicon.glyphicon-tags
+                                        |  RM
+                                li
+                                    a(href='ejercicios')
+                                        span.glyphicon.glyphicon-tags
+                                        |  Detalle
+                        li.sidebar-label.pt25 Nutrición
+                        li
+                            a.accordion-toggle(href='#')
+                                span.fa.fa-share-square-o
+                                span.sidebar-title Alimentación
+                                span.caret
+                            ul.nav.sub-nav
+                                li
+                                    a(href='macros')
+                                        span.glyphicon.glyphicon-tags
+                                        |  Conteo Macros
+                                li
+                                    a(href='dieta')
+                                        span.glyphicon.glyphicon-tags
+                                        |  Dieta
+                        // -------------- Sidebar Progress Bars --------------
+                        li.sidebar-label.pt25.pb15 Stats
+                        li.sidebar-stat
+                            a.fs11(href='#')
+                                span.fa.fa-calendar-o.text-info
+                                span.sidebar-title.text-muted September earnings
+                                span.pull-right.mr20.text-muted $1158
+                                #high-column4(style='height: 150px;')
+                        li.sidebar-stat
+                            a.fs11(href='#')
+                                span.fa.fa-calendar.text-info
+                                span.sidebar-title.text-muted August earnings
+                                span.pull-right.mr20.text-muted $1001
+                                #high-column5(style='height: 150px;')
+                    // -------------- /Sidebar Left Menu --------------
+                    // -------------- Sidebar Hide Button --------------
+                    .sidebar-toggler
+                        a(href='#')
+                            span.fa.fa-arrow-circle-o-left
+                    // -------------- /Sidebar Hide Button --------------
+                // -------------- /Sidebar Left Wrapper  --------------
+            // -------------- Main Wrapper --------------
+            section#content_wrapper
+                // -------------- Topbar Menu Wrapper --------------
+                #topbar-dropmenu-wrapper
+                    .topbar-menu.row
+                        .col-xs-4.col-sm-2
+                            a.service-box.bg-danger(href='#')
+                                span.fa.fa-music
+                                span.service-title Audio
+                        .col-xs-4.col-sm-2
+                            a.service-box.bg-success(href='#')
+                                span.fa.fa-picture-o
+                                span.service-title Images
+                        .col-xs-4.col-sm-2
+                            a.service-box.bg-primary(href='#')
+                                span.fa.fa-video-camera
+                                span.service-title Videos
+                        .col-xs-4.col-sm-2
+                            a.service-box.bg-alert(href='#')
+                                span.fa.fa-envelope
+                                span.service-title Messages
+                        .col-xs-4.col-sm-2
+                            a.service-box.bg-system(href='#')
+                                span.fa.fa-cog
+                                span.service-title Settings
+                        .col-xs-4.col-sm-2
+                            a.service-box.bg-dark(href='#')
+                                span.fa.fa-user
+                                span.service-title Users
+                // -------------- /Topbar Menu Wrapper --------------
+                // -------------- Topbar --------------
+                header#topbar.alt
+                    .topbar-left
+                        ol.breadcrumb
+                            li.breadcrumb-icon
+                                a(href='dashboard1.html')
+                                    span.fa.fa-home
+                            li.breadcrumb-active
+                                a(href='dashboard1.html') Dashboard
+                            li.breadcrumb-link
+                                a(href='/') Home
+                            li.breadcrumb-current-item Table Basic
+                // -------------- /Topbar --------------
+                // -------------- Content --------------
+                section#content.table-layout.animated.fadeIn
+                    // -------------- Column Center --------------
+                    block content
+                    // -------------- /Column Center --------------
+                // -------------- /Content --------------
+            // -------------- Sidebar Right --------------
+            aside#sidebar_right.nano.affix
+                // -------------- Sidebar Right Content --------------
+                .sidebar-right-wrapper.nano-content
+                    .sidebar-block.br-n.p15
+                        h6.title-divider.text-muted.mb20
+                            | Visitors Stats
+                            span.pull-right
+                                | 2015
+                                i.fa.fa-caret-down.ml5
+                        .progress.mh5
+                            .progress-bar.progress-bar-primary(role='progressbar', aria-valuenow='34', aria-valuemin='0', aria-valuemax='100', style='width: 34%')
+                                span.fs11 New visitors
+                        .progress.mh5
+                            .progress-bar.progress-bar-info(role='progressbar', aria-valuenow='66', aria-valuemin='0', aria-valuemax='100', style='width: 66%')
+                                span.fs11.text-left Returnig visitors
+                        .progress.mh5
+                            .progress-bar.progress-bar-warning(role='progressbar', aria-valuenow='45', aria-valuemin='0', aria-valuemax='100', style='width: 45%')
+                                span.fs11.text-left Orders
+                        h6.title-divider.text-muted.mt30.mb10 New visitors
+                        .row
+                            .col-xs-5
+                                h3.text-primary.mn.pl5 350
+                            .col-xs-7.text-right
+                                h3.text-warning.mn
+                                    i.fa.fa-caret-down
+                                    |  15.7%
+                        h6.title-divider.text-muted.mt25.mb10 Returnig visitors
+                        .row
+                            .col-xs-5
+                                h3.text-primary.mn.pl5 660
+                            .col-xs-7.text-right
+                                h3.text-success-dark.mn
+                                    i.fa.fa-caret-up
+                                    |  20.2%
+                        h6.title-divider.text-muted.mt25.mb10 Orders
+                        .row
+                            .col-xs-5
+                                h3.text-primary.mn.pl5 153
+                            .col-xs-7.text-right
+                                h3.text-success.mn
+                                    i.fa.fa-caret-up
+                                    |  5.3%
+                        h6.title-divider.text-muted.mt40.mb20
+                            | Site Statistics
+                            span.pull-right.text-primary.fw600 Today
+            // -------------- /Sidebar Right --------------
+        // -------------- /Body Wrap  --------------
+        // -------------- Scripts --------------
+        // -------------- jQuery --------------
+        script(src='assets/js/plugins/datepicker/js/bootstrap-datetimepicker.min.js')
+        script(src='assets/js/plugins/globalize/globalize.min.js')
+        script(src='assets/js/plugins/moment/moment.min.js')
+        script(src='assets/js/plugins/daterange/daterangepicker.min.js')
+        script(src='assets/js/plugins/datepicker/js/bootstrap-datetimepicker.min.js')
+
+        script(src='assets/js/jquery/jquery-1.11.3.min.js')
+        script(src='assets/js/jquery/jquery_ui/jquery-ui.min.js')
+        // -------------- Sparkline JS --------------
+        script(src='assets/js/plugins/sparkline/jquery.sparkline.min.js')
+        // -------------- HighCharts Plugin --------------
+        script(src='assets/js/plugins/highcharts/highcharts.js')
+        // -------------- Theme Scripts --------------
+        script(src='assets/js/utility/utility.js')
+        script(src='assets/js/demo/demo.js')
+        script(src='assets/js/main.js')
+        script(src='assets/js/demo/widgets_sidebar.js')
+        script(src='assets/js/pages/tables-basic.js')
+        // -------------- /Scripts --------------

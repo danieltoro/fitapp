@@ -1,0 +1,91 @@
+extends layout
+
+block content
+
+    .chute.chute-center
+        .mw1000.center-block
+            // -------------- Spec Form --------------
+            .allcp-form
+                .panel
+                    .panel-heading
+                        .panel-title
+                            | Form Elements
+                    .panel-body
+                        form#form-ui(method='post', action='')
+                            h6#spy1.mb20 Formulario
+                            // -------------- Basic --------------
+                            .row
+                                .col-md-6
+                                    .section
+                                        label.field
+                                            input#altura.gui-input(type='text', name='from', placeholder='Ingrese la altura')
+                                .col-md-1
+                                    .radio-custom.mb5
+                                        input#radioExample3(type='radio', name='radioExample')
+                                        label(for='radioExample3') Cms
+                                .col-md-1
+                                    .radio-custom.mb5
+                                        input#radioExample3(type='radio', name='radioExample')
+                                        label(for='radioExample3') Inch
+                            .row
+                                .col-md-6
+                                    .section
+                                        label.field
+                                            input#peso.gui-input(type='text', name='from', placeholder='Ingrese el peso')
+                                .col-md-1
+                                    .radio-custom.mb5
+                                        input#radioExample3(type='radio', name='radioExample')
+                                        label(for='radioExample3') Kgs
+                                .col-md-1
+                                    .radio-custom.mb5
+                                        input#radioExample3(type='radio', name='radioExample')
+                                        label(for='radioExample3') Lbs
+                            .row
+                                .col-md-4
+                                .col-md-4
+                                    .section
+                                        button.btn.active.btn-dark.btn-block(type='button')
+                                            | Calcular el
+                                            | IMC
+                                .col-md-4
+                            .row
+                                .panel-heading
+                                    span.panel-title Estadisticas historicas
+                                    .pull-right
+                                .panel-body.pn
+                                    .table-responsive
+                                        table.table
+                                            thead
+                                                tr
+                                                    th #
+                                                    th Fecha
+                                                    th Altura
+                                                    th Peso
+                                                    th IMC / BMI
+                                                    th PI / PWD
+                                                    th %PI
+                                                    th PA
+                                                    th PD
+                                                    th BSA
+                                            tbody
+                                                tr
+                                                    td  1
+                                                    td  Press Banca con barra
+                                                    td  3
+                                                    td  5/3/1
+                                                    td  result
+                                                    td
+                                                    td
+                                                    td
+                                                    td
+                                                tr
+                                                    td  2
+                                                    td  Press inclinado con barra
+                                                    td  3
+                                                    td  6-8
+                                                    td
+                                                    td
+                                                    td
+                                                    td
+                                                    td
+                                                    td

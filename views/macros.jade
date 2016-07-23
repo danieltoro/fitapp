@@ -1,0 +1,104 @@
+extends layout
+
+block content
+    title Calculo de Macronutrientes
+
+    .chute.chute-center
+        .mw1000.center-block
+            // -------------- Spec Form --------------
+            .allcp-form
+                .panel
+                    .panel-heading
+                        .panel-title
+                            | Calculo Macronutrientes
+                    .panel-body
+                        form#form-ui(method='post', action='')
+                            // -------------- Basic --------------
+                            .row
+                                .col-md-4
+                                    h6#spy1.mb20 Proteínas:
+                                .col-md-5
+                                    .section
+                                        label.field
+                                            input#from.gui-input(type='text', name='from', placeholder='4')
+                                .col-md-3
+                                    h6#spy1.mb20  Kcal/gr
+                            .row
+                                .col-md-4
+                                    h6#spy1.mb20 Carbohidratos:
+                                .col-md-5
+                                    .section
+                                        label.field
+                                            input#from.gui-input(type='text', name='from', placeholder='4')
+                                .col-md-3
+                                    h6#spy1.mb20  Kcal/gr
+                            .row
+                                .col-md-4
+                                    h6#spy1.mb20 Grasas:
+                                .col-md-5
+                                    .section
+                                        label.field
+                                            input#from.gui-input(type='text', name='from', placeholder='9')
+                                .col-md-3
+                                    h6#spy1.mb20  Kcal/gr
+                            .row
+                                .col-md-4
+                                    h6#spy1.mb20 Objetivo:
+                                .col-md-5
+                                    select.form-control
+                                        option(value='', disabled='', selected='') Selecciona tu objetivo :)
+                                        option Definición
+                                        option Volumen
+                                        option Mantenimiento
+                            .row
+                                .col-md-3
+                                .col-md-7
+                                    .section
+                                        button.btn.active.btn-dark.btn-block(type='button')
+                                            | Calcular
+                                .col-md-4
+                            .row
+                                .panel-heading
+                                    span.panel-title Estadisticas historicas
+                                    .pull-right
+                                .panel-body.pn
+                                    .table-responsive
+                                        table.table
+                                            thead
+                                                tr
+                                                    th #
+                                                    th Fecha
+                                                    th Altura
+                                                    th Peso
+                                                    th IMC
+                                            tbody
+                                                tr
+                                                    td  1
+                                                    td  Press Banca con barra
+                                                    td  3
+                                                    td  5/3/1
+                                                    td
+                                                tr
+                                                    td  2
+                                                    td  Press inclinado con barra
+                                                    td  3
+                                                    td  6-8
+                                                    td
+                                                tr
+                                                    td  3
+                                                    td  Press Declinado
+                                                    td  3
+                                                    td  8-12
+                                                    td
+                            // -------------- Icons --------------
+                            // -------------- Formats --------------
+                            // -------------- Multi Selects --------------
+                            // -------------- Text Areas --------------
+                            // -------------- Input Tooltips --------------
+                            // -------------- Addons --------------
+                            // -------------- File Uploader --------------
+                            // -------------- File Uploader2 --------------
+                            // -------------- File Uploader3 --------------
+                            // -------------- Radios/Checkboxes/Toggle Switches/Review & Rating Widgets --------------
+                            // -------------- /section --------------
+                        // -------------- /form --------------
